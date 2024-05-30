@@ -1,0 +1,25 @@
+.blob {
+    position: absolute;
+    width: 80%; /* Adjust size as needed */
+    height: 80%; /* Adjust size as needed */
+    background: radial-gradient(circle at 100% 100%, #e2eeff, #edf1fd);
+    border-radius: 50%;
+    filter: blur(80px);
+    mix-blend-mode: screen;
+  }
+  
+
+  input[type=file]::file-selector-button {
+    border: 2px solid #3B82F6;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #3B82F6;
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #2675f5;
+    border: 2px solid #2173f7;
+  }

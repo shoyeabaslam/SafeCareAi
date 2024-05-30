@@ -1,0 +1,48 @@
+
+.slider{
+    white-space: wrap;
+    display: flex;
+    position: relative;
+}
+
+.slider::before,.slider::after{
+    content: '';
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+
+.slider::before{
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0),rgb(255, 255, 255));
+}
+
+.slider::after{
+    right: 0;
+    background: linear-gradient(to right,rgba(255,255,255,0),rgb(255, 255, 255));
+}
+
+.inner-slider{
+    animation: slide 60s linear infinite;
+}
+
+
+
+@keyframes slide {
+    to{
+        transform: translate(-100%);
+    }
+}
+
+.slider:hover .inner-slider{
+    animation-play-state: paused;
+}
+
+@media (width <= 650px) {
+    .slider::before,.slider::after{
+        width: 10px;
+    }
+
+}
