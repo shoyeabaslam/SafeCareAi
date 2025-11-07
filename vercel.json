@@ -1,11 +1,11 @@
 {
   "headers": [
     {
-      "source": "/(.*)", 
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors https://reactapp.com https://www.reactapp.com https://safe-care-ai.vercel.app;"
+          "value": "frame-ancestors 'none';"
         }
       ]
     }
